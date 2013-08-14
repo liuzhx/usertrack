@@ -1,0 +1,11 @@
+#!/bin/bash
+rrdtool create Vlan$1.rrd -s 600 -b `date -d "-1 month" +%s` \
+DS:IPCount:GAUGE:1200:0:10000000 \
+RRA:AVERAGE:0.5:1:603 \
+RRA:AVERAGE:0.5:6:603 \
+RRA:AVERAGE:0.5:24:603 \
+RRA:AVERAGE:0.5:288:800 \
+RRA:MAX:0.5:1:603 \
+RRA:MAX:0.5:6:603 \
+RRA:MAX:0.5:24:603 \
+RRA:MAX:0.5:288:800 
