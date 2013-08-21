@@ -31,7 +31,7 @@
 #define IP_MIB_ipNetToMediaPhysAddress                              "1.3.6.1.2.1.4.22.1.2"
 #define CISCO_VLAN_IFTABLE_RELATIONSHIP_MIB_cviRoutedVlanIfIndex "1.3.6.1.4.1.9.9.128.1.1.1.1.3"
 struct config_struct set = {
-    "localhost","student","usertracking","usertracking",3306
+    "localhost","database","mysql_user","mysql_password",3306
 };
 struct sql_query *mysql_querys_insinet[MAXROUTER*MAXTHREAD_PREROUTER];
 struct sql_query *mysql_querys_insinet6[MAXROUTER*MAXTHREAD_PREROUTER];
